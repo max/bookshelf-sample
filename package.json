@@ -1,0 +1,23 @@
+{
+  "name": "bookshelf-sample",
+  "version": "1.0.0",
+  "description": "A sample application with service dependencies",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nf run -- node index.js",
+    "migrate-down": "nf run -- sql-migrate down",
+    "migrate-up": "nf run -- sql-migrate up",
+    "seed": "nf run -- ./bin/seed.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Max Schoening <mschoening@google.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "foreman": "^2.0.0",
+    "pg": "^7.3.0",
+    "sql-migrate": "^0.4.1"
+  }
+}
